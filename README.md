@@ -8,6 +8,8 @@ Why would this package be useful for you?
 > Each time you pick a restaurant, the model gradually learns what you want and hopefully, its suggestions get gradually better.
 > This will save you a lot of time and when designed well, can be a much more fun way to search as opposed to going through a boring list view.
 
+![](readme_photo.jpg)
+
 In general, if the following conditions are present, active preference can be useful for you:
 - User is searching for an item in a very large set of items that's impossible go through one by one.
 - User is okay with a good enough solution if it is going to be found shortly.
