@@ -1,0 +1,2 @@
+Queried points by the algo are shown below. 
+Below that, is the comparison between the utilities of the last preference at each iteration between APL and the baseline case which is simple random picks from the item set.

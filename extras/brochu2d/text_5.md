@@ -1,0 +1,3 @@
+- Test with increasing item size.
+- Play with the kappa of UCB, to see how more adventurous the algorithm might get.
+- Play with the number of queries. Imagine in real life if that many comparisons would hinder user experience a lot.
