@@ -4,10 +4,10 @@ import numpy as np
 from numpy.random import default_rng
 from sklearn.gaussian_process.kernels import Kernel
 
-from apl.posterior_approximation import LogLikelihood, laplace_approximation
-from apl.acquisitions import Acquisition
-from apl.gaussian_process import gaussian_process_conditional
-from apl.utils import transfer_id_from_query_to_explored
+from .posterior_approximation import LogLikelihood, laplace_approximation
+from .acquisitions import Acquisition
+from .gaussian_process import gaussian_process_conditional
+from .utils import transfer_id_from_query_to_explored
 
 
 class ActivePreferenceLearning:

@@ -16,13 +16,19 @@ In general, if the following conditions are present, active preference can be us
 - Items can be embedded in a vectors space where proximity in that space implies similarity in preference between items.
 
 # Installation
-There are currently two modes of installation: bare bones, extras, development.
+## Pip
+Run the following inside a virtual environment:
+
+`pip install APL-Brochu`
+
+## From the Source
+There are currently three modes of installation: bare bones, extras, development.
 
 Whichever mode, first clone the repository.
 
 `git clone git@github.com:dorukhansergin/APL-Brochu.git`
 
-## Bare Bones
+### Bare Bones
 The package requires:
 ```
 numpy~=1.20.1 
@@ -34,16 +40,17 @@ Change into the folder of the cloned repository and use `pip` to install.
 
 `pip install .`
 
-## Extras
+### Extras
 In addition to bare bones, the following packages will be installed:
 ```
 streamlit
 matplotlib
+plotly
 ```
 
 `pip install .\[extras\]`
 
-## Development
+### Development
 In addition to bare bones, the following packages will be installed:
 ```
 pytest
@@ -59,7 +66,7 @@ Change into the folder of the cloned repository and use `pip` to install, with t
 You can run the tests using pytest with the simple `pytest` command.
 
 # Play with the Demo
-See above for the installation of extras.
+See above for the installation of *extras*.
 The extras has a demo for you to get a feeling for the algorithm.
 Use the streamlit command to run it.
 

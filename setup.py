@@ -13,7 +13,7 @@ with open(os.path.join(here, "apl", "__version__.py")) as f:
 with open("README.md", "r") as f:
     readme = f.read()
 
-requirements = ["numpy~=1.20.1", "scikit-learn~=0.24.1", "scipy"]
+requirements = ["numpy~=1.20,<2.0.0", "scikit-learn~=0.24.1,<1.0.0", "scipy"]
 dev_requirements = ["pytest", "pylint", "black", "rope"]
 extra_requirements = ["streamlit", "matplotlib", "plotly"]
 
@@ -21,20 +21,18 @@ extra_requirements = ["streamlit", "matplotlib", "plotly"]
 # https://setuptools.readthedocs.io/en/latest/setuptools.html#id9
 setup(
     name=about["__title__"],
-    description=about["__description__"],
-    long_description=readme,
-    long_description_content_type="text/markdown",
     version=about["__version__"],
+    description=about["__description__"],
+    url=about["__url__"],
     author=about["__author__"],
     author_email=about["__author_email__"],
-    url=about["__url__"],
+    long_description=readme,
+    long_description_content_type="text/markdown",
     include_package_data=True,
-    python_requires=">=3.6.*",
-    package_dir={"": "apl"},
-    packages=find_packages("apl"),
+    # python_requires=">=3.6.*",
+    packages=find_packages(),
     install_requires=requirements,
     extras_require={"dev": dev_requirements, "extras": extra_requirements},
-    license=about["__license__"],
     zip_safe=False,
     # classifiers=[
     #     "Development Status :: 4 - Beta",
